@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-node-web-app
+  labels:
+    app: sample-node-web-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: web
+          image: weebeetester/sample-node-web-app:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
