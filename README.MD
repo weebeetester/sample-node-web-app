@@ -21,6 +21,5 @@ Simple NodeJS based web app to play around.
 
 >kubeclt apply -f k8s-service.yml
 
-## Get IP[Minikube] and open/curl the app in browser OR on cmd line
-minikube ip
+## Get IP[Minikube: >minikube ip] and open the app in browser(or curl on cmd line)
 http://${IP}:${NODEPORT}/
