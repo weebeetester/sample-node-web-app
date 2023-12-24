@@ -4,9 +4,11 @@ Simple NodeJS based web app to play around.
 ## Build docker image
 >docker build -t weebeetester/sample-node-web-app:latest .
 
+## Run docker image
+>docker run -p 8080:8080 weebeetester/sample-node-web-app
+
 ## Push to image repository
 >docker image push --all-tags weebeetester/sample-node-web-app
-
 
 ## Create deployment imperatively
 >kubectl create deployment samplenodewebapp --image weebeetester/sample-node-web-app
